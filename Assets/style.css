@@ -34,49 +34,49 @@ nav a {
     padding: 14px 20px;
 }
 
-main {
-    min-height:70vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+h2 {
+    display:flex;
+    justify-content: end;
+    align-items:center;
+    width:20%;
 }
 
-section {
-    width:30%;
-    border:2px dashed var(--accent);
-    height:30vh;
+.card {
     margin:1%;
     display: flex;
-    flex-direction: row;
     align-items:center;
-    width:100%;
-    height:100%;
 }
 
-section:hover, section:hover h3 {
-    box-shadow: 0 0 5px 5px  lavender;
+.card div {
+    width:80%;
+    margin: 30px;
+    padding: 20px;
+    border-left: black solid 5px;
+}
+
+div:hover {
+    box-shadow: 0 0 5px 5px  turquoise;
     transition: all 1s ease;
 }
 
-main h2 {
-    display:flex;
-    border-right: black solid 5px;
-    position: relative;
-    text-align:right;
-    /* align-items:flex-start; */
-    background-color: teal;
-    width:300px;
-    transition: all 1s ease;
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
 }
-
 
 footer {
     color:teal;
+    text-align:center;
+    content: "\01f354";
 }
 
-@media screen and (max-width: 990px) {
-    main h2 {
-        border-bottom: black solid 5px;
-        flex-direction:column;
+@media screen and (max-width: 768px) {
+    .card h2 {
+        width:100%;
+    }
+    .card div {
+        width: 100%;
+        border-top: black solid 5px;
+        border-left: none;
     }
 }
