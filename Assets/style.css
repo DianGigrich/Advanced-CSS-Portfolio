@@ -1,3 +1,8 @@
+:root {
+    --gradients: linear-gradient(to bottom right, turquoise 20%, seashell 80%);
+
+}
+
 * {
     box-sizing: border-box;
 }
@@ -18,11 +23,13 @@ header {
 }
 
 h1 {
-    margin: 20px;
-    padding: 0px 40px 0 40px;
+    margin: 30px;
+    padding: 40px 40px 40px 40px;
     text-align:left;
     color: teal;
-    background-color: aquamarine;
+    background: gold;
+    box-shadow:-5px -5px 5px 40px gold;
+    border-radius: 100%;
 }
 
 nav {
@@ -72,44 +79,90 @@ h2 {
     animation:fadeIn 7s;
 }
 
-.workpics {
-    display:flex;
-    flex-flow:row wrap;
-    justify-content: space-evenly;
-}
-
-.workpics img {
-    max-width: 100%;
-    max-height: 100%;
-    border: 2px solid black;
-    border-radius: 20% 20%;
-    box-shadow: 0px 0px 10px teal;
-}
-
-#workpics1 img {
-    TODO: FIX SIZING
-}
-
-.workpics h3 {
-    position: relative;
-    margin:-75px 70px;
-    padding: 2%;
-    color: #000;
-    background: ;
-    text-align: center;
-    border: 2px solid black;
-    box-shadow: -2px -2px 5px turquoise, 2px 2px 5px turquoise;
-    background-image: linear-gradient(to bottom right, turquoise 20%, seashell 80%);
-}
-
 .card div {
     width:80%;
     margin: 30px;
     padding: 20px;
     border-left: black solid 5px;
 }
+/* 
+.Bengal {
+    display:flex;
+    flex-grow:1;
+    background: url(/Assets/Images/Bengal.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid pink;
+    margin:30px;
+}
 
-.workpics img:hover, .workpics:hover h3 {
+.Bees {
+    background: url(/Assets/Images/Bees.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid pink;
+    margin:30px;
+}
+
+.Mantis {
+    background: url(/Assets/Images/Mantis.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid pink;
+    margin:30px;
+}
+
+.ChowChow {
+    background: url(/Assets/Images/ChowChow.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid pink;
+    margin:30px;
+}
+
+.CatBelly {
+    background: url(/Assets/Images/CatBelly.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid pink;
+    margin:30px;
+} */
+    .workpics {
+    display:flex;
+    /* flex-flow:row wrap; */
+    justify-content: center;
+}
+
+.workpics img {
+    display:block;
+    inline-size: contain;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 20% 20%;
+    box-shadow: 0px 0px 10px teal;
+}
+
+#workpics1 {
+    display:block;
+    height:max-content;
+    flex-basis:2 1;
+}
+
+.workpics h3, #workpics1 h3 {
+    position: relative;
+    max-width:30%;
+    margin:-75px 20px -75px -20px;
+    padding: 2%;
+    color: #000;
+    text-align: left;
+    border: 2px solid black;
+    box-shadow: -2px -2px 5px turquoise, 2px 2px 5px turquoise;
+    background-image: linear-gradient(to bottom right, turquoise 20%, seashell 80%);
+}
+
+.workpics section:hover {
     border: 2px solid black;
     border-radius: 20% 0%;
     box-shadow: 0 0 10px 10px  turquoise;
