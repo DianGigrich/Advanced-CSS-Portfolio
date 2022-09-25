@@ -85,121 +85,40 @@ h2 {
     padding: 20px;
     border-left: black solid 5px;
 }
-/* 
-.Bengal {
+
+.workpics {
     display:flex;
-    flex-grow:1;
-    background: url(/Assets/Images/Bengal.jpg) no-repeat;
-    background-size: contain;
-    background-position: center;
-    border: 1px solid pink;
-    margin:30px;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
 }
 
-.Bees {
-    background: url(/Assets/Images/Bees.jpg) no-repeat;
-    background-size: contain;
-    background-position: center;
-    border: 1px solid pink;
-    margin:30px;
-}
-
-.Mantis {
-    background: url(/Assets/Images/Mantis.jpg) no-repeat;
-    background-size: contain;
-    background-position: center;
-    border: 1px solid pink;
-    margin:30px;
-}
-
-.ChowChow {
-    background: url(/Assets/Images/ChowChow.jpg) no-repeat;
-    background-size: contain;
-    background-position: center;
-    border: 1px solid pink;
-    margin:30px;
-}
-
-.CatBelly {
-    background: url(/Assets/Images/CatBelly.jpg) no-repeat;
-    background-size: contain;
-    background-position: center;
-    border: 1px solid pink;
-    margin:30px;
-} */
-    .workpics {
+.workpics1{
     display:flex;
-    /* flex-flow:row wrap; */
-    justify-content: center;
+
 }
 
-/* .workpics img {
-    max-width: 80%;
-    max-height: 80%;
-    margin: 2px;
-    border: 2px solid black;
-    border-radius: 20% 20%;
-    box-shadow: 0px 0px 10px teal; */
-}
-
-#Mantis {
-    max-width: 80%;
-    max-height: 80%;
-    margin: 2px;
+.workpics img {
+    max-height: 100%;
+    max-width: 100%;
     border: 2px solid black;
     border-radius: 20% 20%;
     box-shadow: 0px 0px 10px teal;
 }
 
-#Bees {
-    max-width: 80%;
-    max-height: 80%;
-    margin: 2px;
-    border: 2px solid black;
-    border-radius: 20% 20%;
-    box-shadow: 0px 0px 10px teal;
-}
 
-#CatBelly {
-    max-width: 80%;
-    max-height: 80%;
-    margin: 2px;
-    border: 2px solid black;
-    border-radius: 20% 20%;
-    box-shadow: 0px 0px 10px teal;
-}
-
-#Cat {
-    max-width: 80%;
-    max-height: 80%;
-    margin: 2px;
-    border: 2px solid black;
-    border-radius: 20% 20%;
-    box-shadow: 0px 0px 10px teal;
-}
-
-#Chowchow {
-    max-width: 80%;
-    max-height: 80%;
-    margin: 2px;
-    border: 2px solid black;
-    border-radius: 20% 20%;
-    box-shadow: 0px 0px 10px teal;
-}
-
-.workpics h3, #Mantis h3 {
+h3 {
     position: relative;
-    max-width:30%;
-    margin:-75px 20px -75px -20px;
+    max-width:50%;
+    margin-top:-50px;
     padding: 2%;
     color: #000;
-    text-align: left;
+    text-align: center;
     border: 2px solid black;
     box-shadow: -2px -2px 5px turquoise, 2px 2px 5px turquoise;
     background-image: linear-gradient(to bottom right, turquoise 20%, seashell 80%);
 }
 
-.workpics section:hover {
+.workpics img:hover {
     border: 2px solid black;
     border-radius: 20% 0%;
     box-shadow: 0 0 10px 10px  turquoise;
@@ -222,7 +141,7 @@ footer {
     content: "\01f354";
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     header{
         flex-direction:column;
     }
@@ -237,4 +156,9 @@ footer {
         border-top: black solid 5px;
         border-left: none;
     }
+    .workpics1 {
+        flex-direction:column;
+        height:50%;
+    }
+
 }
