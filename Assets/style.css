@@ -7,7 +7,7 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     min-height: 100vh;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
 }
 
 header {
@@ -45,22 +45,18 @@ nav a {
     background-image: linear-gradient(turquoise 20%, seashell 80%);
 }
 
-h2 {
-    animation:fadeIn 7s;
-}
-
 .hero img{
     border: 2px solid black;
     height:200px;
     border-radius: 30%;
     box-shadow: 0px 0px 10px teal;
-    animation:fadeIn 7s;
+    /* animation:fadeIn 7s; */
 }
 
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }
+}
 
 .card {
     margin:1%;
@@ -73,36 +69,35 @@ h2 {
     justify-content: end;
     align-items:center;
     width:20%;
+    animation:fadeIn 7s;
 }
 
-div img {
-    height:200px
-}
 .workpics {
     display:flex;
-    /* flex-wrap: wrap; */
     flex-flow:row wrap;
     justify-content: center;
-    transition: all 1s ease;
-
+    align-items: center;
 }
 
 .workpics img {
-    border: 2px solid black;
-    /* height:40%; */
-    border-radius: 30% 0%;
-    box-shadow: 0px 0px 10px teal;
-    animation:fadeIn 7s;
-    border: 2px solid black;
+    max-width: 100%;
+    max-height: 100%;
     height:200px;
-    border-radius: 30%;
-    box-shadow: 0px 0px 10px teal;
-    /* animation:fadeIn 7s; */
+    border: 2px solid black;
+    border-radius: 20% 0%;
+    box-shadow: 0px 0px 5px teal;
 }
-
-/* #mantis {
-    /* height: 450px; */
-/* } */
+/* 
+#workpics1 img {
+} */
+/* 
+.workpics h3 {
+    position: relative;
+    margin:-75px 0px;
+    color: #000;
+    background-color: turquoise;
+    text-align: center;
+} */
 
 .card div {
     width:80%;
@@ -111,7 +106,7 @@ div img {
     border-left: black solid 5px;
 }
 
-div:hover {
+.workpics img:hover {
     box-shadow: 0 0 5px 5px  turquoise;
     transition: all 1s ease;
 }
@@ -128,10 +123,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    header{
+        flex-direction:column;
+    }
     .card {
         flex-direction: column;
     }
-
     .card h2 {
         width:100%;
     }
