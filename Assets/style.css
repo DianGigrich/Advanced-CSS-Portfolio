@@ -34,6 +34,7 @@ nav {
     display:flex;
     align-items:flex-end;
 }
+
 /* removes hyperlink coloring */
 nav a {
     color:black;
@@ -47,10 +48,6 @@ nav a {
     height: 200px;
     width: 100%;
     background-image: linear-gradient(turquoise 20%, seashell 80%);
-}
-
-.hero h2 {
-    /* font-family:lobster; */
 }
 
 .hero img{
@@ -71,7 +68,7 @@ nav a {
     display: flex;
     align-items:center;
 }
-
+/* fade in headers */
 h2 {
     display:flex;
     justify-content: end;
@@ -80,6 +77,7 @@ h2 {
     animation:fadeIn 7s;
 }
 
+/* black left border on cards */
 .card div {
     width:80%;
     margin: 30px;
@@ -92,21 +90,19 @@ h2 {
     flex-flow:row wrap;
     justify-content: space-evenly;
 }
-
+/* puts pics in nice order */
 .workpics1{
     display:flex;
-
 }
 
 .workpics img {
-    /* max-height: 90%; */
     max-width: 80%;
     border: 2px solid black;
     border-radius: 20% 20%;
     box-shadow: 0px 0px 10px teal;
 }
 
-
+/* headers moved onto pics */
 h3 {
     position: relative;
     max-width:50%;
@@ -119,6 +115,7 @@ h3 {
     background-image: linear-gradient(to bottom right, turquoise 20%, seashell 80%);
 }
 
+/* hover effects */
 .workpics img:hover {
     border: 2px solid black;
     border-radius: 20% 0%;
@@ -159,7 +156,6 @@ footer {
     }
     .workpics1 {
         flex-direction:column;
-        /* height:50%; */
     }
     .workpics img {
         max-width:70%;
