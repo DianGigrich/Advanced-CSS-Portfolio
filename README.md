@@ -2,6 +2,11 @@
 
 Culmination of CSS learning module
 
+## Mockup
+
+https://drive.google.com/file/d/1rCqjQvPsAGHxDomD7OEgyzDCB8BI4GEJ/view
+(![Picture Preview of Site](Assets/Images/Dian's%20Porfolio.png))
+
 ## Installation
 
 github, gitback, vscode
